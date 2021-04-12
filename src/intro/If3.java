@@ -7,7 +7,7 @@ public class If3 {
         //80点以上をA、70点～79点をB、60点～69点をC、その他をD
         int score = 65;
 
-        if (score>=80){
+        if (score>=80) {
             System.out.println(score + ":A");
         } else if (score>=70) {
             System.out.println(score + ":B");
