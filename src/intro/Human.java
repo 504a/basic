@@ -1,7 +1,7 @@
 package intro;
 
 //人間クラス
-public class Human {
+class Human {
     //フィールド
     private String name;
     private String gender;
@@ -25,5 +25,14 @@ public class Human {
 
     public int getAge() {
         return age;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
