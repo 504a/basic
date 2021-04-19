@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
 class Student {
     private String name;
