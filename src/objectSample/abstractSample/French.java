@@ -1,6 +1,6 @@
-package objectSample.inheritance;
+package objectSample.abstractSample;
 
-class French extends Human{
+class French extends Human {
     public French(String name) {
         super(name);
     }
