@@ -22,5 +22,10 @@ class SampleMain {
         //インターフェイスMethodAで定義されてるメソッドのみ使用ができる
         sampleSub2.methodA();
 
+        //スーパークラスの型の変数定義
+        //サブクラスの型でインスタンスを作成
+        SampleSuper sampleSuper1 = new SampleSub1("abc");
+        sampleSuper1.getSuperFiled();
+
     }
 }
