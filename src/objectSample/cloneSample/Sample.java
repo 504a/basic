@@ -1,7 +1,5 @@
 package objectSample.cloneSample;
 
-import java.util.Arrays;
-
 //クローンメソッドの実装
 class Sample implements Cloneable {
     private int num;//基本型
@@ -9,6 +7,14 @@ class Sample implements Cloneable {
 
     public Sample(int num, Node node) {
         this.num = num;
+        this.node = new Node(node);//ポインタの参照を断ち切るため
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public void setNode(Node node) {
         this.node = node;
     }
 
@@ -21,7 +27,16 @@ class Sample implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Sample clone() {
+        Sample clone = null;
+        try {
+            //オブジェクトクラスのクローンメソッドで複製する
+            clone = (Sample) super.clone();
+            //参照型のフィールドを個別に複製する
+            clone.node = node.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();//例外時のトレース
+        }
+        return clone;//複製を返却する
     }
 }
