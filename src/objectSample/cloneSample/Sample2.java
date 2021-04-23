@@ -8,7 +8,7 @@ class Sample2 implements  Cloneable {
     //コンストラクタも安全ではない
     public Sample2(int num, Node node) {
         this.num = num;
-        this.node = node.clone();
+        this.node = node;
     }
 
     public void setNum(int num) {
