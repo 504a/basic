@@ -14,5 +14,8 @@ class ArraySample3 {
         System.out.println(Arrays.toString(newArray1));
         System.out.println(Arrays.toString(newArray2));
         System.out.println(Arrays.toString(newArray3));
+
+        int[] newArray4 = Arrays.copyOfRange(array,1,3);//{2,3}
+        System.out.println(Arrays.toString(newArray4));
     }
 }

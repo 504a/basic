@@ -13,6 +13,15 @@ class ArraySample1 {
         return sum;
     }
 
+    //配列を引数としたstaticメソッド(引数を可変長引数へ変更)
+    public static int sum2(int... array){
+        int sum = 0;
+        for (int value:array) {
+            sum += value;
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         //配列の宣言
         int[] array1 = new int[10];//サイズのみ指定
@@ -28,5 +37,6 @@ class ArraySample1 {
         //配列を引数に記述する場合
         System.out.println(ArraySample1.sum(array2));//15
         System.out.println(ArraySample1.sum(new int[]{10, 20, 30}));
+        System.out.println(ArraySample1.sum2(10, 20, 30, 40, 50));
     }
 }
