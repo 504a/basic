@@ -3,7 +3,7 @@ package objectSample.arraySample;
 import java.util.Arrays;
 
 //配列のサンプル
-public class ArraySample1 {
+class ArraySample1 {
     //配列を引数としたstaticメソッド
     public static int sum(int[] array){
         int sum = 0;
