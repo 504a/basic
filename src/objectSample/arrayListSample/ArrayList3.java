@@ -20,5 +20,12 @@ class ArrayList3 {
 
         sample.sort(Comparator.comparing(Sample::getAge,Comparator.reverseOrder()));//降順
         System.out.println(sample);
+
+        //名前でソート
+        sample.sort(Comparator.comparing(Sample::getName));//昇順
+        System.out.println(sample);
+
+        sample.sort(Comparator.comparing(Sample::getName,Comparator.reverseOrder()));//降順
+        System.out.println(sample);
     }
 }
