@@ -40,5 +40,27 @@ class ArrayList1 {
         System.out.println(Arrays.toString(list.toArray()));
         list.remove(Integer.valueOf(100));//100という値を削除
         System.out.println(Arrays.toString(list.toArray()));
+
+        //データの複数削除（一致したもの）
+        list.removeAll(Arrays.asList(40,50,100));//40 50 削除
+        System.out.println(Arrays.toString(list.toArray()));
+
+        //データの複数削除（一致しないもの）
+        list.retainAll(Arrays.asList(30,60,90));//30 60 90 以外を削除
+        System.out.println(Arrays.toString(list.toArray()));
+
+        //値の変更
+        list.set(0,0);//要素0の内容を0にする
+        System.out.println(Arrays.toString(list.toArray()));
+
+        //クリア
+        list.clear();
+        System.out.println(Arrays.toString(list.toArray()));
+
+        //サイズの取得
+        System.out.println(list.size());//0
+
+        //空かどうか？　空っぽなら true
+        System.out.println(list.isEmpty());//true
     }
 }
