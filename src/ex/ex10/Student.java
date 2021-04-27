@@ -52,4 +52,8 @@ class Student {
         return String.format("%s %d %d %2d %3d %3d %3d",
                 name,grade,cl,no,jap,math,eng);
     }
+
+    //個人合計を求めるメソッドを作成する
+
+    //個人平均を求めるメソッドを作成する
 }
