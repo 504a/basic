@@ -49,7 +49,7 @@ class Student {
 
     @Override
     public String toString() {
-        return String.format("%s %d %d %2d 3d 3d 3d",
+        return String.format("%s %d %d %2d %3d %3d %3d",
                 name,grade,cl,no,jap,math,eng);
     }
 }
