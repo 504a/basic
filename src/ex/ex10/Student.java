@@ -49,11 +49,17 @@ class Student {
 
     @Override
     public String toString() {
-        return String.format("%s %d %d %2d %3d %3d %3d",
-                name,grade,cl,no,jap,math,eng);
+        return String.format("%s %d %d %2d %3d %3d %3d %3d %.2f",
+                name,grade,cl,no,jap,math,eng,getSum(),getAve());
     }
 
     //個人合計を求めるメソッドを作成する
+    public int getSum() {
+        return jap + math + eng;
+    }
 
     //個人平均を求めるメソッドを作成する
+    public double getAve() {
+        return getSum() / 3.0;
+    }
 }
