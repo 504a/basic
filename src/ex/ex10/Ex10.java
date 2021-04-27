@@ -37,10 +37,24 @@ class Ex10 {
         }
 
         //全員を対象に国語の得点の降順に並び替えて一覧表示しなさい。
-
+        list.sort(Comparator.comparing(Student::getJap,Comparator.reverseOrder()));
+        System.out.println("国語の得点の降順");
+        for (Student s:list) System.out.println(s);
 
         //3年生の各科目の平均を表示しなさい。
-
+        int japSum = 0,mathSum = 0,engSum = 0,grade = 3;
+        double cnt = 0;
+        for (Student s:list) {
+            if (s.getGrade() == grade){
+                japSum += s.getJap();
+                mathSum += s.getMath();
+                engSum += s.getEng();
+                cnt++;
+            }
+        }
+        System.out.println(grade + "年生の各科目の平均");
+        System.out.println(String.format("国語:%.2f 数学:%.2f 英語:%.2f ",
+                japSum / cnt,mathSum/cnt,engSum/cnt));
 
     }
 }
