@@ -26,5 +26,14 @@ class Ex11 {
         list.sort(Comparator.comparing(Person::getAge,Comparator.reverseOrder()));
         System.out.println("年齢の降順");
         for (Person p:list) System.out.println(p);
+
+        //男性で年齢の降順で出力
+        List<Person> mens = new ArrayList<>();
+        for (Person p:list) {
+            if ("男".equals(p.getGender())) mens.add(p);
+        }
+        mens.sort(Comparator.comparing(Person::getAge,Comparator.reverseOrder()));
+        System.out.println("男性で年齢の降順");
+        for (Person p:mens) System.out.println(p);
     }
 }
