@@ -7,6 +7,14 @@ import java.util.Scanner;
 
 //名前の完全一致で検索する
 class Ex12 {
+    //別解
+    public static boolean containsName(String name,List<Person> list) {
+        for (Person p:list) {
+            if (p.getName().equals(name)) return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         List<Person> list = new ArrayList<>();
         list.addAll(Arrays.asList(
@@ -25,7 +33,7 @@ class Ex12 {
         Scanner in = new Scanner(System.in);
         System.out.println("検索する名前を入力");
         String name = in.nextLine();
-        
+
         //名前のリストを作成する
         List<String> nameList = new ArrayList<>();
         for (Person p:list) {
@@ -33,6 +41,13 @@ class Ex12 {
         }
         //検索する
         if (nameList.contains(name)) {
+            System.out.println(name + "は存在します");
+        } else {
+            System.out.println(name + "は存在しません");
+        }
+
+        //別解
+        if (containsName(name,list)) {
             System.out.println(name + "は存在します");
         } else {
             System.out.println(name + "は存在しません");
