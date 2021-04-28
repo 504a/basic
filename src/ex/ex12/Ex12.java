@@ -25,6 +25,17 @@ class Ex12 {
         Scanner in = new Scanner(System.in);
         System.out.println("検索する名前を入力");
         String name = in.nextLine();
-        System.out.println(name);
+        
+        //名前のリストを作成する
+        List<String> nameList = new ArrayList<>();
+        for (Person p:list) {
+            nameList.add(p.getName());
+        }
+        //検索する
+        if (nameList.contains(name)) {
+            System.out.println(name + "は存在します");
+        } else {
+            System.out.println(name + "は存在しません");
+        }
     }
 }
