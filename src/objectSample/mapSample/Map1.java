@@ -14,6 +14,7 @@ class Map1 {
         map.put("Orange","オレンジ");
         //一覧の表示
         System.out.println(map);
+        
         //for命令での表示
         //データを取得する変数 entry
         //データ型はMap.Entry<String,String>
@@ -22,5 +23,4 @@ class Map1 {
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
     }
-
 }
