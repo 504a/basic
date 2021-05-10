@@ -18,8 +18,20 @@ class Branch {
     }
 
     public static void initSales(Employee employee,int value) {
-        for (int i = 0; i < 12; i++) {
+        for (int i = 1; i < 13; i++) {
             employee.setSales(i,value);
         }
+    }
+
+    public Branch(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Employee> getEmployees() {
+        return new ArrayList<Employee>(employees);
     }
 }
