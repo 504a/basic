@@ -35,6 +35,7 @@ class Employee {
 
     @Override
     public String toString() {
-        return String.format("%d %s %s %d");
+        return String.format("%d %s %s %d"
+                ,no,name,gender,age);
     }
 }
