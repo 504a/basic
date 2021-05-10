@@ -3,6 +3,7 @@ package objectSample.mapSample;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -20,6 +21,8 @@ class Map2 {
     public static void main(String[] args) {
         //MemberのArrayListを作成する
         List<Member> member = new ArrayList<>();
+        List<Member> linkedMember = new LinkedList<>(member);
+
         member.addAll(Arrays.asList(
                 new Member("1","Tom"),
                 new Member("2","Bob"),
