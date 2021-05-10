@@ -7,10 +7,10 @@ class Employee {
     private int no;
     private String name;
     private String gender;
-    private String age;
+    private int age;
     private List<Integer> sales = new ArrayList<>(12);
 
-    public Employee(int no, String name, String gender, String age) {
+    public Employee(int no, String name, String gender, int age) {
         this.no = no;
         this.name = name;
         this.gender = gender;
@@ -29,7 +29,7 @@ class Employee {
         return gender;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
