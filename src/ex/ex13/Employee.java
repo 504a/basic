@@ -62,4 +62,16 @@ class Employee {
         return String.format("%d %s %s %d"
                 ,no,name,gender,age);
     }
+
+    public int getSum() {
+        int sum = 0;
+        for (int value:sales) {
+            sum += value;
+        }
+        return sum;
+    }
+
+    public double getAve() {
+        return getSum() / 12.0;
+    }
 }
