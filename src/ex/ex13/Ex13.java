@@ -23,5 +23,6 @@ class Ex13 {
         System.out.println(employee.getSales(1));
         System.out.println(employee.getSum());
         System.out.println(employee.getAve());
+        System.out.println(employee.getAllSales());
     }
 }

@@ -63,6 +63,14 @@ class Employee {
                 ,no,name,gender,age);
     }
 
+    public String getAllSales() {
+        List<String> list = new ArrayList<>();
+        for (Integer value:sales) {
+            list.add(value.toString());
+        }
+        return String.join(" ",list);
+    }
+
     public int getSum() {
         int sum = 0;
         for (int value:sales) {
