@@ -6,6 +6,7 @@ class Ex13 {
         Employee employee = new Employee(1,"やまだ","男",35);
         //表示する
         System.out.println(employee);
+        employee.setSales(1,500);
         System.out.println(employee.getSales(1));
     }
 }

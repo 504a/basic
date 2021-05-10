@@ -11,7 +11,7 @@ class Employee {
     private int age;
     private List<Integer> sales = new ArrayList<>(12);
 
-    //イニシャライザ
+    //イニシャライザ インスタンスを作成時に実行される
     {
         sales.addAll(Arrays.asList(0,0,0,0,0,0,0,0,0,0,0,0));
     }
@@ -46,6 +46,15 @@ class Employee {
      */
     public int getSales(int month) {
         return sales.get(month - 1);
+    }
+
+    /**
+     * 月を指定して売上をセットする
+     * @param month int 指定する月(1～12)
+     * @param value int 指定した月の売上
+     */
+    public void setSales(int month,int value) {
+        sales.set(month - 1,value);
     }
 
     @Override
