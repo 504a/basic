@@ -8,7 +8,7 @@ class Employee {
     private String name;
     private String gender;
     private String age;
-    private List<Integer> seals = new ArrayList<>(12);
+    private List<Integer> sales = new ArrayList<>(12);
 
     public Employee(int no, String name, String gender, String age) {
         this.no = no;
