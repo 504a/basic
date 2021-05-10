@@ -18,7 +18,7 @@ class Branch {
     }
 
     public static void initSales(Employee employee,int value) {
-        for (int i = 1; i < 13; i++) {
+        for (int i = 1; i <= 12; i++) {
             employee.setSales(i,value);
         }
     }
