@@ -72,6 +72,6 @@ class Employee {
     }
 
     public double getAve() {
-        return getSum() / 12.0;
+        return (double) getSum() / sales.size();
     }
 }
