@@ -18,8 +18,17 @@ class EnumSample {
 
     public static void main(String[] args) {
         //列挙型を表示してみる
-        System.out.println(Color.RED);
-        viewColor(Color.YELLOW);
-        System.out.println(Color.BLUE.getJpName());
+        System.out.println(Color.RED);//RED
+        viewColor(Color.YELLOW);//黄
+        System.out.println(Color.BLUE.getJpName());//青
+        System.out.println(Color.RED.name());//RED
+        System.out.println(Color.BLUE.ordinal());//1
+        Color color = Color.valueOf("YELLOW");//列挙型の取得
+        System.out.println(color.getJpName());//黄
+        Color[] colors = Color.values();//列挙定数の一覧の取得
+        for (Color c:colors) {
+            System.out.println(c);
+        }
+
     }
 }
