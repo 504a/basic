@@ -20,5 +20,6 @@ class EnumSample {
         //列挙型を表示してみる
         System.out.println(Color.RED);
         viewColor(Color.YELLOW);
+        System.out.println(Color.BLUE.getJpName());
     }
 }
