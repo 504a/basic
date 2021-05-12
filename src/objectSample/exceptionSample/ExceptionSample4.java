@@ -16,7 +16,6 @@ class ExceptionSample4 {
 
         try (BufferedReader br = Files.newBufferedReader(in);
              BufferedWriter bw = Files.newBufferedWriter(out)) {
-
             String line = br.readLine();//1行読み取り
             while (line != null) {//ファイルが終わるまで
                 System.out.println(line);//画面に表示
@@ -24,7 +23,6 @@ class ExceptionSample4 {
                 bw.newLine();//改行を書き込み
                 line = br.readLine();//次の行を読む
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
