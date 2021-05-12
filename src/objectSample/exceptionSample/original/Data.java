@@ -22,4 +22,9 @@ class Data {
     public int getAge() {
         return age;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %d",name,gender.getName(),age);
+    }
 }
