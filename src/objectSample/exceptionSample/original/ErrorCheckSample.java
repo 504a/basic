@@ -28,7 +28,7 @@ class ErrorCheckSample {
         //外部からフィールドの値を入力されたイメージで処理をする
 
         boolean hasError = false;//入力にエラーがあればtrue
-        Data data = null;//Studentインスタンスの保存用
+        Data data = null;//Dataインスタンスの保存用
 
         //入力処理
         do {
