@@ -31,12 +31,6 @@ class Optional4 {
         for (Optional<Integer> opt:optionalList) {
             opt.filter(v -> v >= 5).ifPresent(v -> System.out.println(v));
         }
-
-
-
-
-
-
-
+        
     }
 }
