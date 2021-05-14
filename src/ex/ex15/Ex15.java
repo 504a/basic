@@ -7,5 +7,6 @@ class Ex15 {
             検索するメソッドsearchPersonを作成してOptional<Person>で戻り値を作成するメソッドを作成すること。
 
          */
+
     }
 }
