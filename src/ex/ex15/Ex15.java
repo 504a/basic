@@ -8,10 +8,10 @@ import java.util.Optional;
 
 class Ex15 {
     /**
-     *
-     * @param no
-     * @param personMap
-     * @return
+     * 検索メソッド
+     * @param no Integer 検索したい番号(no)
+     * @param personMap Map<Integer,Person> 検索対象のMap
+     * @return Optional<Person> 検索結果(nullの場合有)
      */
     public static Optional<Person> searchPerson(Integer no,Map<Integer,Person> personMap) {
             return Optional.ofNullable(personMap.get(no));
@@ -38,12 +38,12 @@ class Ex15 {
         //検索の実行
         int key = 1;//存在する
         searchPerson(key,personMap).ifPresentOrElse(
-                p -> System.out.println(p),
-                () -> System.out.println("Not find."));
+                p -> System.out.println(p),//存在した場合の処理
+                () -> System.out.println("Not find."));//存在しなかった場合の処理
 
         key = 3;//存在しない
         searchPerson(key,personMap).ifPresentOrElse(
-                p -> System.out.println(p),
-                () -> System.out.println("Not find."));
+                p -> System.out.println(p),//存在した場合の処理
+                () -> System.out.println("Not find."));//存在しなかった場合の処理
     }
 }
