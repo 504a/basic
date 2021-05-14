@@ -39,6 +39,6 @@ class Optional4 {
         for (Optional<Integer> opt:optionalList) {
             opt.map(v -> v*2).ifPresent(v -> System.out.println(v));
         }
-        
+
     }
 }
