@@ -28,8 +28,16 @@ class Optional4 {
 
         //v -> v >= 5 がtrueなら値の入っているOptionalを返す
         //空で無ければ出力をする
+        System.out.println("値のフィルター");
         for (Optional<Integer> opt:optionalList) {
             opt.filter(v -> v >= 5).ifPresent(v -> System.out.println(v));
+        }
+
+        //値を加工する
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Optional.html#map(java.util.function.Function)
+        System.out.println("値を加工する");
+        for (Optional<Integer> opt:optionalList) {
+            opt.map(v -> v*2).ifPresent(v -> System.out.println(v));
         }
         
     }
