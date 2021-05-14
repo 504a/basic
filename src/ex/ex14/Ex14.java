@@ -35,13 +35,14 @@ class Ex14 {
         //分類
         for(Student s:list) {
             if(studentMap.containsKey(s.getCl())) {
-                List<Student> classList = studentMap.get(s.getCl());
-                classList.add(s);
-                studentMap.put(s.getCl(),classList);
+                //すでにクラスが存在する
+                List<Student> classList = studentMap.get(s.getCl());//クラスのリストを取得
+                classList.add(s);//学生の追加
+                studentMap.put(s.getCl(),classList);//マップの再設定
             } else {
-                List<Student> classList = new ArrayList<>();
-                classList.add(s);
-                studentMap.put(s.getCl(),classList);
+                List<Student> classList = new ArrayList<>();//クラスリストの新規作成
+                classList.add(s);//そのクラスの一人目を追加
+                studentMap.put(s.getCl(),classList);//マップへ初回追加
             }
         }
         //System.out.println(studentMap);
