@@ -58,5 +58,13 @@ class StringSample {
         System.out.println("　This is a pen.　".stripLeading());
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html#stripTrailing()
         System.out.println("　This is a pen.　".stripTrailing());
+
+        //文字列の長さを調べる
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html#length()
+        System.out.println("あい123".length());//5
+        //サロゲートペアだと長さが倍になる
+        System.out.println("𠀋あ𠀋".length());//5
+        System.out.println("𠀋あ𠀋".codePointCount(0,"𠀋あ𠀋".length()));//3
+
     }
 }
