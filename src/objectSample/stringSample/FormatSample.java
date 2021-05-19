@@ -20,7 +20,11 @@ class FormatSample {
         System.out.println(MessageFormat.format("name:{0} age:{1}", name, age));
 
         //NumberFormat
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/text/NumberFormat.html
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         System.out.println(nf.format(1234567));//￥1,234,567
+
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        System.out.println(percent.format(0.724));
     }
 }
