@@ -23,7 +23,7 @@ class Person {
      * コンストラクタ
      * @param name 名前 String
      * @param gender 性別 Gender
-     * @param birth 誕生日 LocalDate
+     * @param birth 誕生日 String
      */
     public Person(String name, Gender gender, String birth) {
         this.name = name;
@@ -72,7 +72,7 @@ class Person {
 
     /**
      * Personの文字列表現
-     * @return "やまだ 男 2005/02/15 16" String
+     * @return 文字列表現 "やまだ 男 2005/02/15 16" String
      */
     @Override
     public String toString() {
