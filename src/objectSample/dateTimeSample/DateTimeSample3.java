@@ -13,5 +13,9 @@ class DateTimeSample3 {
                     date.getMonthValue())
                     + date.lengthOfMonth());
         }
+
+        //曜日の求め方
+        LocalDate now = LocalDate.now();
+        System.out.println(now + " " + now.getDayOfWeek());
     }
 }
