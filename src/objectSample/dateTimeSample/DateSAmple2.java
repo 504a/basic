@@ -3,7 +3,7 @@ package objectSample.dateTimeSample;
 import java.time.LocalDateTime;
 import java.time.Month;
 
-class LocalDateSAmple2 {
+class DateSAmple2 {
     public static void main(String[] args) {
         LocalDateTime someDateTime = LocalDateTime.of(1981, Month.NOVEMBER,25,18,0,0);
 
@@ -15,5 +15,9 @@ class LocalDateSAmple2 {
         System.out.println(someDateTime.getMinute());//0
         System.out.println(someDateTime.getSecond());//0
         System.out.println(someDateTime.getNano());//0
+        System.out.println(someDateTime.getDayOfYear());//329
+        System.out.println(someDateTime.getDayOfMonth());//25
+        System.out.println(someDateTime.getDayOfWeek());//WEDNESDAY
+        System.out.println(someDateTime.getDayOfWeek().getValue());//3
     }
 }
