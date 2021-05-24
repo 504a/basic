@@ -10,7 +10,7 @@ class Ex18 {
         int offset = now.withDayOfMonth(1)//１日にする
                 .getDayOfWeek()//曜日の列挙型を取得
                 .getValue() % 7;//その番号を取得、日曜は0にする。
-        //System.out.println(firstDayOfWeekNo);
+        //System.out.println(offset);
 
         //月の日数を求める。
         int lengthOfMonth = now.lengthOfMonth();
