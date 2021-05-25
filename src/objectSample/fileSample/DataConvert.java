@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 //CSV→Person
@@ -54,5 +55,14 @@ class DataConvert {
             Person person = new Person(name,gender,birth);
             personList.add(person);
         }
+
+        for (Person p:personList) System.out.println(p);
+
+        //年齢の降順でソート
+        personList.sort(Comparator.comparing(Person::getAge,Comparator.reverseOrder()));
+
+        System.out.println("年齢の降順");
+        for (Person p:personList) System.out.println(p);
+
     }
 }
