@@ -14,6 +14,7 @@ class ReadSample1 {
         Path path = Paths.get("src","objectSample","fileSample","input.csv");
 
         try {
+            //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/file/Files.html#readAllLines(java.nio.file.Path)
             List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
             for (String line:lines) System.out.println(line);
         } catch (IOException e) {

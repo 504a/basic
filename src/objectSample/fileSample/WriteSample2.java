@@ -24,6 +24,7 @@ class WriteSample2 {
 
         Path path = Paths.get("src", "objectSample", "fileSample", "output2.csv");
 
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption...)
         try (BufferedWriter bw = Files.newBufferedWriter(path, StandardCharsets.UTF_8, StandardOpenOption.CREATE)) {
             for (String line:data) {
                 bw.write(line);
