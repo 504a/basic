@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //テキストファイルの書き込みその１
-class WriteSAmple1 {
+class WriteSample1 {
     public static void main(String[] args) {
         List<String> data = new ArrayList<>();
         data.addAll(Arrays.asList(
