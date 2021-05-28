@@ -15,8 +15,8 @@ class DeleteSample {
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/file/Files.html#delete(java.nio.file.Path)
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)
         try {
-            Files.delete(copy);
-            //Files.deleteIfExists(copy);
+            //Files.delete(copy);
+            Files.deleteIfExists(copy);
         } catch (NoSuchFileException e) {
             System.out.println("削除するファイルが存在しない");
         } catch (DirectoryNotEmptyException e) {
