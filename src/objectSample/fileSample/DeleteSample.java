@@ -9,14 +9,14 @@ import java.nio.file.Paths;
 
 class DeleteSample {
     public static void main(String[] args) {
-        Path newDir = Paths.get("src","objectSample","fileSample","newDir");
+        Path copy = Paths.get("src","objectSample","fileSample","copy.txt");
 
         //ファイル・ディレクトリのの削除
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/file/Files.html#delete(java.nio.file.Path)
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)
         try {
-            Files.delete(newDir);
-            //Files.deleteIfExists(newDir);
+            Files.delete(copy);
+            //Files.deleteIfExists(copy);
         } catch (NoSuchFileException e) {
             System.out.println("削除するファイルが存在しない");
         } catch (DirectoryNotEmptyException e) {
