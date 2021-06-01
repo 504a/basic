@@ -23,7 +23,7 @@ class StreamSample6 {
         System.out.println(ave.orElse(0));
 
         //データの個数を求める
-        Long count = integerList.stream()
+        long count = integerList.stream()
                 .filter(i -> i % 2 == 1)
                 .count();
         System.out.println(count);//3
