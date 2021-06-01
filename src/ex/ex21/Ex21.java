@@ -11,7 +11,6 @@ class Ex21 {
         List<Integer> integerList = IntStream.rangeClosed(1,100).boxed()
                 .collect(Collectors.toList());
 
-
         integerList.stream()
                 .filter(i -> i % 2 == 0)//偶数のみを処理する
                 .map(i -> i * 3)//対象の数値を3倍する
