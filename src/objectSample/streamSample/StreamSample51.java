@@ -19,7 +19,7 @@ class StreamSample51 {
         Path csv = Paths.get("src","objectSample","streamSample","data3.csv");
 
         Function<Data,String> toCsv = d -> String.join(",",d.getId(),d.getName());
-        
+
         //小規模ファイル向け
         try {
             List<String> lines = dataList.stream()
