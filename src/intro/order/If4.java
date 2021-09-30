@@ -5,9 +5,9 @@ public class If4 {
         int score = 65;
 
         if (score >=80) {
-            System.out.printf("A");
+            System.out.println("A");
         } else if (score >= 70) {
-            System.out.printf("B");
+            System.out.println("B");
         } else if (score >= 50) {
             System.out.println("C");
         } else {
