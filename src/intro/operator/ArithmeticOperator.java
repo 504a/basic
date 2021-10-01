@@ -42,8 +42,8 @@ public class ArithmeticOperator {
         //代入演算子
         int i,j;
         i = j = 10;
-        System.out.println("g:" + g);//10
-        System.out.println("h:" + h);//10
+        System.out.println("i:" + i);//10
+        System.out.println("j:" + j);//10
 
         //複合代入演算子
         //例 x = x + 1;
