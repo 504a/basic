@@ -11,7 +11,7 @@ public class RoundSample {
         System.out.println(Math.floor(num));
         //四捨五入（小数点第一位）
         System.out.println(Math.round(num));
-        //四捨五入（小数点第一位）
-        System.out.println(Math.round(num * 10.0) /10.0);
+        //四捨五入（小数点第二位）
+        System.out.println(Math.round(num * 10.0) / 10.0);
     }
 }
