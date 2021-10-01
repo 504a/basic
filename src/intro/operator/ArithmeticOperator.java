@@ -19,7 +19,7 @@ public class ArithmeticOperator {
         System.out.println("-e:" + -e);//-1
         System.out.println("e:" + e++);//1
         System.out.println("f:" + ++f);//3
-        System.out.println("e++ + ++f:" + (e++ + ++f));//2+4=6
+        System.out.println("e++ + ++f =" + (e++ + ++f));//2+4=6
         System.out.println("e:" + e);//3
         System.out.println("f:" + f);//4
 
