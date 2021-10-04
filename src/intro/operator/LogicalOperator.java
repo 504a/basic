@@ -22,6 +22,6 @@ public class LogicalOperator {
 
         //否定（NOT）
         System.out.println("!f " + (!f));//true
-        System.out.println("!t " + (!t));//falses
+        System.out.println("!t " + (!t));//false
     }
 }
