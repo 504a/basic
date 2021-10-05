@@ -30,7 +30,7 @@ public class Rps {
                 break;
         }
 
-        //CPUの手を表示
+        //あなたの手を表示
         switch (player) {
             case 0:
                 System.out.println("あなた:グー");
