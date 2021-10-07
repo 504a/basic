@@ -3,7 +3,7 @@ package intro.sample;
 import java.util.Arrays;
 
 //条件に一致したデータの個数を数える（条件 0以上）
-//変数iを使用したループ版
+//while版
 public class CountSample3 {
     public static void main(String[] args) {
         //整数型配列の宣言

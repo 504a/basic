@@ -2,7 +2,7 @@ package intro.sample;
 
 import java.util.Arrays;
 
-//配列の最大値 変数iを使用したループ版
+//配列の最大値 while版
 public class MaxSample3 {
     public static void main(String[] args) {
         //整数型配列の宣言

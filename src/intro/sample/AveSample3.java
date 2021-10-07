@@ -2,7 +2,7 @@ package intro.sample;
 
 import java.util.Arrays;
 
-//配列の平均 変数iを使用したループ版
+//配列の平均 while版
 public class AveSample3 {
     public static void main(String[] args) {
         //整数型配列の宣言
