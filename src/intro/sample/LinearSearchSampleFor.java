@@ -3,7 +3,7 @@ package intro.sample;
 import java.util.Arrays;
 
 //線形探索法(番兵法)
-public class LinearSearchSample {
+public class LinearSearchSampleFor {
     public static void main(String[] args) {
         //整数型配列の宣言
         int[] array = {10,-10,20,100,0};
